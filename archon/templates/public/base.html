@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Family Archive{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/public.css') }}">
+</head>
+<body>
+    <nav>
+        {% if 'user_id' in session %}
+            <!-- Show Logout button if the user is logged in -->
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('collections') }}">Collections</a>
+            <a href="{{ url_for('profile') }}">Profile</a>
+            <a href="{{ url_for('logout') }}">Logout</a>
+        {% else %}
+            <!-- Optionally, show Login button if the user is not logged in -->
+            <a href="{{ url_for('login') }}">Login</a>
+        {% endif %}
+    </nav>
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

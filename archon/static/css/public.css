@@ -1,0 +1,29 @@
+/* static/style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5e6cc;
+    color: #5a3e2b;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #d2691e;
+    padding: 1em;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

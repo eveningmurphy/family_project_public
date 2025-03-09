@@ -1,0 +1,9 @@
+# Ignore the Python environment folders and files
+archon/Lib/
+archon/Scripts/
+archon/db/
+archon/flask_session/
+archon/pyvenv.cfg
+
+# Ignore the requirements.txt if it's being auto-generated
+requirements.txt

@@ -1,0 +1,7 @@
+Bcrypt
+Flask
+Flask-MySQLdb
+Flask-Bcrypt
+Flask-Session
+gunicorn
+random-word
