@@ -40,6 +40,22 @@ def index():
 def collections():
     return render_template('public/collections.html')
 
+@app.route('/collections/browse')
+@login_required
+def browse_collections():
+    # Add logic to fetch collections for browsing
+    return render_template('public/collections/browse.html')
+
+@app.route('/collections/search', methods=['GET', 'POST'])
+@login_required
+def search_collections():
+    # Add logic for searching collections
+    if request.method == 'POST':
+        search_query = request.form['search_query']
+        # Perform search logic based on search_query
+        return render_template('public/collections/search.html', search_query=search_query)
+    return render_template('public/collections/search.html')
+
 @app.route('/profile')
 @login_required
 def profile():

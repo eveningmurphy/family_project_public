@@ -1,0 +1,89 @@
+body { 
+    font-family: Tahoma, sans-serif;
+    background-color: #C9A52C; /* Gold color */
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+nav {
+    background: #645216; /* Solid dark tone */
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px 10px;
+    border: 2px solid black;
+    background: linear-gradient(to bottom, #E6C664, #645216);
+    box-shadow: 1px 1px 0px black;
+}
+
+nav a:hover {
+    background: linear-gradient(to bottom, #ffeb99, #C9A52C);
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #E6C664; /* Light gold */
+    border: 3px solid black;
+    box-shadow: 3px 3px 0px black;
+}
+
+/* Buttons */
+button {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid black;
+    background: linear-gradient(to bottom, #C9A52C, #645216);
+    color: black;
+    box-shadow: 2px 2px 0px black;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ffeb99; /* Light tone for hover */
+}
+
+button:active {
+    box-shadow: 1px 1px 0px black;
+    transform: translate(1px, 1px);
+}
+
+/* Input Fields */
+input {
+    padding: 5px;
+    border: 2px solid black;
+    background: #ffeb99; /* Light tone */
+    color: black;
+}
+
+/* Modal / Popup */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #E6C664;
+    border: 3px solid black;
+    padding: 20px;
+    box-shadow: 4px 4px 0px black;
+}
+
+.modal-header {
+    background: #2a230b;
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    color: white;
+}

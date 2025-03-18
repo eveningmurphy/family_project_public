@@ -5,4 +5,27 @@
 {% block content %}
 <h1>Collections</h1>
 <p>Browse our family archives.</p>
+
+<!-- Browse and Search Buttons -->
+<div class="collection-buttons">
+    <a href="{{ url_for('browse_collections') }}" class="btn btn-primary button">Browse Collections</a>
+    <a href="{{ url_for('search_collections') }}" class="btn btn-primary button">Search Collections</a>
+</div>
+
+<!-- Featured Documents Section -->
+<section class="featured-documents">
+    <h2>Featured Documents</h2>
+    <div class="thumbnail-scroller">
+        <!-- Thumbnail example items -->
+        {% for document in featured_documents %}
+        <div class="thumbnail-item">
+            <!--a href="{{ url_for('document.view', document_id=document.id) }}">
+                <img src="{{ document.thumbnail_url }}" alt="{{ document.title }}" class="thumbnail">
+            </a-->
+            <p>{{ document.title }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
 {% endblock %}
